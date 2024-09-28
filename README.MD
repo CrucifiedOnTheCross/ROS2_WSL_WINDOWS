@@ -1,4 +1,4 @@
-# 1 WSL установка на windows
+# WSL установка на windows
 
 * Откройте PowerShell с правами администратора и выполните команду для активации WSL:
 
@@ -14,7 +14,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 * Перезагрузите компьютер
 
-# 2 Обновление ядра WSL 2
+# Обновление ядра WSL 2
 
 Чтобы использовать WSL 2, необходимо обновить ядро WSL. Для этого:
 
@@ -26,7 +26,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 wsl --set-default-version 2
 ```
 
-# 3 Установка Ubuntu из Microsoft Store
+# Установка Ubuntu из Microsoft Store
 * Откройте Microsoft Store и найдите Ubuntu.
 * Нажмите «Получить» и дождитесь установки.
 
@@ -35,7 +35,7 @@ wsl --set-default-version 2
 * Откройте Ubuntu из меню «Пуск» или через команду wsl в терминале.
 * Следуйте инструкциям по настройке, задайте имя пользователя и пароль.
 
-# 4 Проверка версии WSL
+# Проверка версии WSL
 
 Чтобы убедиться, что Ubuntu работает на WSL 2, выполните команду:
 ```shell
@@ -47,7 +47,7 @@ wsl -l -v
 wsl --set-version Ubuntu 2
 ```
 
-# 5 Запускаем WSL 
+# Запускаем WSL 
 
 Теперь у вас появилось приложение Ubuntu в списке приложения необходимо открыть его
 
@@ -57,7 +57,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-# 6 Установка ROS2
+# Установка ROS2
 
 ## Установка Locale
 Убедитесь, что ваша **Locale** поддерживает `UTF-8`. Если вы находитесь в минимальном окружении 
